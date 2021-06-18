@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>FNT_WebAppFisioterapia</AssemblyName>
+    <RootNamespace>FNT_WebAppFisioterapia</RootNamespace>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aplication.BusinessLogic\Aplication.BusinessLogic.csproj" />
+  </ItemGroup>
+
+</Project>
