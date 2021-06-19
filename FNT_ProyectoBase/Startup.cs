@@ -13,6 +13,7 @@ using DataModel;
 using DataModel.Context;
 using Aplication.BusinessLogic.Interfaz;
 using Aplication.BusinessLogic.Logic;
+using DataModel.Modelo;
 
 namespace FNT_WebAppFisioterapia
 {

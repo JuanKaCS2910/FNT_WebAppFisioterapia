@@ -17,7 +17,7 @@ namespace Aplication.BusinessLogic.Logic
 
         public string CargaDepartamento()
         {
-            var _resultado = _context.Departamento.Select(p => p.Nombre).FirstOrDefault();
+            var _resultado = _context.Departamentos.Select(p => p.Nombre).FirstOrDefault();
 
             return _resultado;
         }
