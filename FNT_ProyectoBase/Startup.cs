@@ -50,7 +50,8 @@ namespace FNT_WebAppFisioterapia
             }
             else
             {
-                app.UseExceptionHandler("/Dashboards/Dashboard_1");
+                //app.UseExceptionHandler("/Dashboards/Dashboard_1");
+                app.UseExceptionHandler("/Login/Login");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -61,11 +62,18 @@ namespace FNT_WebAppFisioterapia
 
             app.UseAuthorization();
 
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute(
+            //        name: "default",
+            //        pattern: "{controller=Dashboards}/{action=Dashboard_1}/{id?}");
+            //});
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Dashboards}/{action=Dashboard_1}/{id?}");
+                    pattern: "{controller=Login}/{action=Login}/{id?}");
             });
         }
     }

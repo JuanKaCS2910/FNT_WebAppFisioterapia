@@ -1,0 +1,28 @@
+﻿/************* Estilos para la contraseña ****************************/
+.big-icon {
+    color: #0d71d6;
+}
+
+.show-eye i {
+    position: absolute;
+    transform: translate(-50%);
+    left: 92%;
+    margin-top: -5.5%;
+    cursor: pointer;
+    display: none;
+}
+
+.show-eye-slash i {
+    position: absolute;
+    transform: translate(-50%);
+    left: 92%;
+    margin-top: -5.5%;
+    cursor: pointer;
+    display: none;
+}
+
+input:valid ~ .show-eye i {
+    display: block;
+}
+
+
